@@ -21,7 +21,7 @@ const Table = (props: { Users:  TypeUser[]}) => {
 
   // Update List Item's state and Master Checkbox State
   const onItemCheck = (e: ChangeEvent<HTMLInputElement>, item: TypeUser) => {
-      let tempList = list;
+      const tempList = list
 
       tempList.forEach((user) => {
           if (user.id === item.id) {

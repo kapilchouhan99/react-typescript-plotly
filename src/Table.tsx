@@ -66,7 +66,7 @@ const Table = (props: { Users:  TypeUser[]}) => {
             <tbody>
             {list.map((user) => (
               <tr key={user.id} className={user.selected ? "selected" : ""}>
-                <th scope="row">
+                <td scope="row">
                   <input
                       type="checkbox"
                       checked={user.selected}
@@ -74,7 +74,7 @@ const Table = (props: { Users:  TypeUser[]}) => {
                       id="rowcheck{user.id}"
                       onChange={(e) => onItemCheck(e, user)}
                   />
-                </th>
+                </td>
                 <td>{user.topic}</td>
                 <td>{user.score}</td>
               </tr>
